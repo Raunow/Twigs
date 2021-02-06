@@ -1,0 +1,30 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "ESNext",
+        "lib": [
+            "ESNext"
+        ],
+        "declaration": false,
+        "outDir": "lib",
+        "rootDir": "src",
+        "strict": true,
+        "resolveJsonModule": true,
+        "noImplicitAny": true,
+        "allowSyntheticDefaultImports": true,
+        "experimentalDecorators": true,
+        "forceConsistentCasingInFileNames": true,
+        "strictNullChecks": true,
+        "sourceMap": true,
+        "removeComments": true,
+        "importHelpers": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noUncheckedIndexedAccess": true,
+        "noImplicitThis": true,
+        "noImplicitReturns": true,
+        "importsNotUsedAsValues": "remove"
+    },
+    "include": ["./src/**/*.ts"]
+}
