@@ -1,4 +1,4 @@
-module.exports.css = `
+export const css = `
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 .markdown-body .octicon {

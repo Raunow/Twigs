@@ -1,20 +1,24 @@
 {
   "name": "twigs",
   "version": "0.1.0",
-  "main": "index.js",
   "author": "raunow <26925392+Raunow@users.noreply.github.com>",
   "license": "MIT",
-  "devDependencies": {
-    "@types/node": "^14.14.25",
-    "@types/puppeteer": "^5.4.3",
-    "typescript": "^4.1.3"
+  "scripts": {
+    "test": "markdown ./test/temp.md ./test/temp.pdf",
+    "prestart": "yarn install",
+    "start": "tsc -w"
   },
   "bin": {
-    "markdown": "./src/markdown.js"
+    "markdown": "./lib/markdown.js"
   },
   "dependencies": {
     "@octokit/core": "^3.2.5",
     "github-markdown-css": "^4.0.0",
     "puppeteer": "^7.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.25",
+    "@types/puppeteer": "^5.4.3",
+    "typescript": "^4.1.3"
   }
 }
