@@ -1,6 +1,6 @@
 [![Docker Logo][docker-image]][docker-docs]
 
-# Everything Docker 
+# Everything Docker
 
 
 ### Contents
@@ -14,7 +14,7 @@
 
 
 
-## Installation 
+## Installation
 
 #### Windows
 1. Head to Docker [downloads][docker-downloads].
@@ -39,11 +39,15 @@
     $ docker run hello-world
     ```
 
+    ```js
+    console.log('test')
+    ```
 
-These commands test: 
+
+These commands test:
 
 1. Whether Docker is installed.
-2. That you have selected a shared drive. 
+2. That you have selected a shared drive.
 3. The Daemon has access to the internet.
 4. The Daemon can run a container.
 
@@ -74,7 +78,7 @@ The Arrigo API uses 8 different commands.
   >This will be the default path when "**.**" (Dot) is used as the <dest path>.
   >The folder is created if it doesn't exist.
 
-- COPY 
+- COPY
   > `COPY [--from]<file path>  <dest path>`
   > Basic use `COPY . . `
   > Used to copy files from the project into the container.
@@ -113,19 +117,19 @@ This simplest way is by executing:
 $ docker build [--rm] [-t] .
 ```
 
-> Remember the last "**.** " (dot) as that signifies the path to the Dockerfile. 
+> Remember the last "**.** " (dot) as that signifies the path to the Dockerfile.
 
-This will result in a container with a random name, "latest" as the version, and a few extra containers that was used in building the image. 
+This will result in a container with a random name, "latest" as the version, and a few extra containers that was used in building the image.
 
 
 
 `-t <namespace/containername:version>`
 
-Declares <namespace>, <container name>, and <version>. each of which can be left out. 
+Declares <namespace>, <container name>, and <version>. each of which can be left out.
 
 `-t rssoftware/arrigo:1.0.0`
 
-`--rm` 
+`--rm`
 
 Deletes leftover containers when the build process is done.
 
@@ -144,7 +148,7 @@ Deletes leftover containers when the build process is done.
     With the output being a table:
 
     | REPOSITORY | TAG  | IMAGE ID | CREATED | SIZE |
-    | :--------- | ---- | -------- | ------- | -------- |
+    | --------- | ---- | -------- | ------- | -------- |
     | rssoftware/arrigo | 1.0.0 | 7ca2f9cb5536 | n <minutes> ago | 191mb |
 
     `-a`
@@ -189,10 +193,10 @@ Deletes leftover containers when the build process is done.
 ## Vocabulary
 
 - **Container** A contained environment with everything necessary to run the designated code inside on any platform at any scale.
-- **Docker** Known as the company that standardised containerising applications. 
+- **Docker** Known as the company that standardised containerising applications.
 - **Dockerfile** An extension-less file containing build instructions for the docker daemon to follow.
 - **Image** A container "frozen in time".
-- **Multistaging** A way of building containers more efficiently. 
+- **Multistaging** A way of building containers more efficiently.
 - **Stamping Containers** Starting a container from an image.
 
 

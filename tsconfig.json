@@ -1,9 +1,9 @@
 {
     "compileOnSave": true,
     "compilerOptions": {
-        "target": "ESNext",
+        "target": "es2020",
         "module": "CommonJS",
-        "declaration": false,
+        "declaration": true,
         "outDir": "lib",
         "rootDir": "src",
         "strict": true,
@@ -14,14 +14,15 @@
         "strictNullChecks": true,
         "removeComments": true,
         "importHelpers": true,
-        "sourceMap": true,
+        "sourceMap": false,
         "noUnusedLocals": true,
         "noUnusedParameters": true,
         "noUncheckedIndexedAccess": true,
         "noImplicitThis": true,
         "noImplicitReturns": true,
         "importsNotUsedAsValues": "remove",
-        "skipLibCheck": true
+        "skipLibCheck": true,
+        "inlineSourceMap": true
     },
     "include": [
         "src"
