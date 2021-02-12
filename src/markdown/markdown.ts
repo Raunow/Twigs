@@ -11,13 +11,6 @@ export function resolvePath(path: string) {
 
 export function convertToHTML(rawMD: string) {
 
-    // let octokit = new Octokit({ userAgent: 'twigs-markdown/v0.1.0' });
-
-
-    // return await octokit.request('POST /markdown', {
-    //     text: rawMD
-    // });
-
     return marked.parse(rawMD);
 }
 
@@ -27,7 +20,6 @@ export function applyStyling(rawHtml: string, style = css) {
 
 export async function createPDF(html: string, type: "pdf" | "png" | "jpeg" | PDFOptions, path?: string) {
     try {
-        console.log(type, path)
         const browser = await (await puppeteer).launch({
             headless: true,
             defaultViewport: undefined,
@@ -53,7 +45,6 @@ export async function createPDF(html: string, type: "pdf" | "png" | "jpeg" | PDF
                 type,
                 path,
                 fullPage: true,
-
             })
         }
         await browser.close();
