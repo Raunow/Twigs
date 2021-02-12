@@ -20,7 +20,7 @@ export function applyStyling(rawHtml: string, style = css) {
 
 export async function createPDF(html: string, type: "pdf" | "png" | "jpeg" | PDFOptions, path?: string) {
     try {
-        const browser = await (await puppeteer).launch({
+        const browser = await puppeteer.launch({
             headless: true,
             defaultViewport: undefined,
             args: ['--font-render-hinting=none'],

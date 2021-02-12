@@ -5,14 +5,14 @@
   "license": "MIT",
   "scripts": {
     "pretest": "tsc",
-    "test": "markdown ./test/temp.md ./test/temp.pdf",
+    "test": "twigs markdown ./test/temp.md ./test/temp.pdf",
     "prestart": "yarn install",
     "start": "tsc -w"
   },
   "types": "index.d.ts",
   "main": "./lib/cli.js",
   "bin": {
-    "markdown": "./lib/cli.js"
+    "twigs": "./lib/cli.js"
   },
   "dependencies": {
     "github-markdown-css": "^4.0.0",

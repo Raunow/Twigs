@@ -21,7 +21,6 @@ export async function renderMD(MDSource: string, options: RenderOptions) {
 
         if (options.output === 'html') return html;
 
-
         return await createMedia(html, options.output, options.path);
 
     } catch (e) {
