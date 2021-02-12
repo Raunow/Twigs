@@ -8,7 +8,7 @@ import { resolvePath } from './markdown/markdown';
 yargs
     .scriptName('twigs')
     .usage('$0 <cmd> [args]')
-    .command('markdown [src] [out]', 'Create a .pdf from a source .md file', (yargs) => {
+    .command('markdown [src] [out] [args]', 'Create a .pdf from a source .md file', (yargs) => {
         yargs.positional('src', {
             type: 'string',
             demandOption: true,
@@ -23,10 +23,10 @@ yargs
             choices: ['pdf', 'html', 'png', 'jpeg'],
             describe: 'output file type'
         }).option('style', {
-            alias: 'css',
+            alias: 's',
             describe: 'path to custom CSS, overrides default CSS'
         }).option('rawHTML', {
-            alias: 'raw',
+            alias: 'r',
             boolean: true,
             describe: 'Get raw HTML'
         })
