@@ -1,8 +1,10 @@
 {
-  "name": "twigs",
+  "name": "my-twigs",
   "version": "0.1.0",
+  "description": "A collection of commands I needed",
   "author": "raunow <26925392+Raunow@users.noreply.github.com>",
   "license": "MIT",
+  "private": false,
   "scripts": {
     "pretest": "tsc",
     "test": "twigs markdown ./test/temp.md ./test/temp.pdf",
@@ -10,9 +12,9 @@
     "start": "tsc -w"
   },
   "types": "index.d.ts",
-  "main": "./lib/cli.js",
+  "main": "./lib/index.js",
   "bin": {
-    "twigs": "./lib/cli.js"
+    "twigs": "lib/cli.js"
   },
   "dependencies": {
     "github-markdown-css": "^4.0.0",
@@ -26,5 +28,21 @@
     "@types/puppeteer": "^5.4.3",
     "@types/yargs": "^16.0.0",
     "typescript": "^4.1.3"
-  }
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Raunow/Twigs.git"
+  },
+  "keywords": [
+    "markdown",
+    "html",
+    "pdf"
+  ],
+  "bugs": {
+    "url": "https://github.com/Raunow/Twigs/issues"
+  },
+  "homepage": "https://github.com/Raunow/Twigs#readme"
 }
