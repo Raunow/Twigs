@@ -1,5 +1,5 @@
 import { PDFOptions } from 'puppeteer/lib/cjs/puppeteer/api-docs-entry';
-import { applyStyling, convertToHTML, createPDF as createMedia } from './markdown/markdown';
+import { applyStyling, convertToHTML, createMedia } from './markdown/markdown';
 
 export type RenderOptions = {
     rawHTML?: boolean,

@@ -18,7 +18,7 @@ export function applyStyling(rawHtml: string, style = css) {
     return `${style}\n<div class="markdown-body">\n${rawHtml}\n</div>`;
 }
 
-export async function createPDF(html: string, type: "pdf" | "png" | "jpeg" | PDFOptions, path?: string) {
+export async function createMedia(html: string, type: "pdf" | "png" | "jpeg" | PDFOptions, path?: string) {
     try {
         const browser = await puppeteer.launch({
             headless: true,
